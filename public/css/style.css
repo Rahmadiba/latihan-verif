@@ -1,0 +1,136 @@
+/* public/css/style.css */
+
+/* Reset dasar & Font */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6; /* Warna background abu-abu sangat muda */
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Wrapper Utama biar ketengah dan berbentuk "Kartu" */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Efek bayangan tipis */
+}
+
+/* Tipografi */
+h2, h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 10px;
+}
+
+/* Desain Form & Input */
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #4a5568;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Desain Tombol & Link */
+button, .btn {
+    display: inline-block;
+    background-color: #3182ce; /* Biru kalem profesional */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+button:hover, .btn:hover {
+    background-color: #2b6cb0;
+}
+
+.btn-danger {
+    background-color: #e53e3e;
+}
+
+.btn-danger:hover {
+    background-color: #c53030;
+}
+
+.btn-success {
+    background-color: #38a169;
+}
+
+/* Desain Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background-color: #edf2f7;
+    color: #2d3748;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f7fafc;
+}
+
+/* Notifikasi / Alert */
+.alert {
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.alert-success {
+    background-color: #c6f6d5;
+    color: #22543d;
+    border: 1px solid #9ae6b4;
+}
+
+.alert-danger {
+    background-color: #fed7d7;
+    color: #742a2a;
+    border: 1px solid #feb2b2;
+}
